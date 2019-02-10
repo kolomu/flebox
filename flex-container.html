@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Container</title>
+    <style>
+    /* Source: https://www.educative.io/collection/page/5191711974227968/5741031244955648/5744505470844928 */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+     ul {
+         display: flex; /* Make the element a flex-container */
+         /* Main Axis Direction for flex-items  */
+         flex-direction: row; /* row=default || column || row-reverse || column-reverse; */
+         /* Should flex container shrink/grow if space */
+         flex-wrap: nowrap; /* nowrap=default || wrap || wrap-reverse */
+         /* Shorthand Property for flex direction & flex-wrap */
+         flex-flow: row wrap;
+         /* how flex-item are laid out on the main axis (like text-align) */
+         justify-content: space-around; /* flex-start=default || flex-end || center || space-between || space-around */
+         /* how flex-items are laid out on the cross axis */
+         align-items: center; /* flex-start || flex-end || center || stretch=default || baseline*/
+         /* Multiline Flex Container uses align-content */
+         align-content: stretch; /* flex-start || flex-end || center || stretch=default */
+         
+         height: 800px;
+
+     }
+     /* align-items: 
+          stretch = will fill entire row of largest height flex-item
+          flex-start = will begin at the start of the cross-axis
+          flex-end = will begin at the end of the cross-axis
+          center = will begin at the center of the cross-axis
+          baseline = the content of the flex-item is at the base-line
+     */
+
+     li {
+         width: 200px;
+         /* height: 200px; */
+         background-color: #BADA55;
+         margin: 8px;
+     }
+    </style>
+</head>
+<body>
+    <ul> <!--parent element = flex-container -->
+        <li>One</li> <!--first child element = flex-item -->
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat quam tortor, placerat sodales turpis bibendum non. Proin auctor sodales efficitur. Integer nec ante nec mauris sagittis placerat. Suspendisse eu mollis dolor. Vivamus non vehicula arcu, et aliquam libero. Aliquam sed ante justo. Integer nulla massa, semper commodo felis sed, eleifend mattis nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam dolor enim, porttitor vitae tincidunt sed, euismod vitae purus. Donec bibendum vehicula dapibus. Pellentesque euismod elit odio, luctus eleifend diam ultricies eget.</li> 
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+      </ul>
+</body>
+</html>
